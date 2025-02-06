@@ -1,0 +1,45 @@
+# PRUEBA HAIRON .NET Y REACT
+
+ESTE CODIGO PARTE DE UNA PRUEBA NO UTILIZAR PARA COMO ENTREGABLES A OTRA EMPRESA O AMBIENTES ESTUDIANTILES.
+
+**\*** QUE NECESITAS TENER PARA VALIDAR EL BACK-END**\*\*\***
+
+- .NET SDK 8/9
+- MongoDB
+- Postman (opcional, para pruebas)
+
+INSTALACION Y PAQUETES NECESARIOS:
+dotnet add package MongoDB.Driver
+dotnet add package Swashbuckle.AspNetCore
+dotnet add package Microsoft.AspNetCore.OpenApi
+
+CONFIGURACION DEL CERTIFICADO HTTPS:
+dotnet dev-certs https --trust
+
+-IMPORTANTE VERIFICA QUE MONGO ESTE CORRIENDO LOCALMENTE-
+
+IMPORTANTE CONFIGURA EN EL ARCHIVO APPSETTINGS.JSON TU API KEY:
+
+{
+"DatabaseSettings": {
+"ConnectionString": "mongodb://localhost:27017",
+"DatabaseName": "StudentDB",
+"StudentsCollectionName": "Students"
+},
+"ApiKey": "TU_API_KEY"
+}
+
+## EJECUTA EL BACK-END
+
+dotnet run
+
+La API estará disponible NORMALMENTE en: http://localhost:5010
+Probar Endpoints (Postman)
+Agregar header en todas las peticiones:
+
+Key: ApiKey
+Value: [TU_API_KEY]
+
+POST /api/Students - Crear estudiante
+GET /api/Students - Listar estudiantes
+GET /api/Students/grado/{grado} - Buscar por grado
