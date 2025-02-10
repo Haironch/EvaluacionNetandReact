@@ -23,11 +23,11 @@ builder.Services.AddSwaggerGen();
 // Configurar CORS
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowAll",
+    options.AddPolicy("AllowReact",  // Cambiado el nombre para que coincida
         builder =>
         {
             builder
-                .AllowAnyOrigin()
+                .WithOrigins("http://localhost:5173") // Especifica el origen de tu aplicación React
                 .AllowAnyMethod()
                 .AllowAnyHeader();
         });
@@ -42,8 +42,10 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+// El orden es importante
 app.UseHttpsRedirection();
-app.UseCors("AllowAll");
+// CORS debe ir antes de la autenticación y autorización
+app.UseCors("AllowReact");
 app.UseMiddleware<ApiKeyMiddleware>();
 app.UseAuthorization();
 app.MapControllers();

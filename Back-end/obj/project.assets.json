@@ -1058,19 +1058,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/haironchavez/.nuget/packages/": {}
+    "C:\\Users\\ahayaccha\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/haironchavez/Desktop/Proyectos/EvaluacionNetReact/Back-end/Back-end.csproj",
+      "projectUniqueName": "C:\\Users\\ahayaccha\\Desktop\\Proyect Prs\\EvaluacionNetandReact\\Back-end\\Back-end.csproj",
       "projectName": "Back-end",
-      "projectPath": "/Users/haironchavez/Desktop/Proyectos/EvaluacionNetReact/Back-end/Back-end.csproj",
-      "packagesPath": "/Users/haironchavez/.nuget/packages/",
-      "outputPath": "/Users/haironchavez/Desktop/Proyectos/EvaluacionNetReact/Back-end/obj/",
+      "projectPath": "C:\\Users\\ahayaccha\\Desktop\\Proyect Prs\\EvaluacionNetandReact\\Back-end\\Back-end.csproj",
+      "packagesPath": "C:\\Users\\ahayaccha\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ahayaccha\\Desktop\\Proyect Prs\\EvaluacionNetandReact\\Back-end\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/haironchavez/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\ahayaccha\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
@@ -1132,7 +1132,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.102/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
