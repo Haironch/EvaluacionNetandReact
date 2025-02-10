@@ -43,3 +43,44 @@ Value: [TU_API_KEY]
 POST /api/Students - Crear estudiante
 GET /api/Students - Listar estudiantes
 GET /api/Students/grado/{grado} - Buscar por grado
+
+
+
+/*/*/*/* Para iniciar a levantar el fronted /*/*/*/*/
+instalar:
+    npm install @mui/material @emotion/react @emotion/styled
+    npm install @mui/icons-material
+    npm install @mui/x-date-pickers
+    npm install dayjs
+
+
+instalar dependencias:
+    npm install
+
+instalar dependencias especificas:
+    npm install @mui/material @emotion/react @emotion/styled
+    npm install @mui/icons-material
+    npm install @mui/x-date-pickers
+    npm install dayjs
+
+
+correr el fronted:
+    npm run dev
+
+## Tecnologías Utilizadas
+React 18
+TypeScript
+Material-UI (MUI)
+React Hook Form
+Dayjs para manejo de fechas
+Vite como bundler
+
+Características
+
+Registro de estudiantes
+Listado de estudiantes
+Filtrado por grado
+Búsqueda de estudiantes
+Interfaz responsiva
+Validación de formularios
+Manejo de fechas
