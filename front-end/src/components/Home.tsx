@@ -1,14 +1,6 @@
-import React, { useState } from 'react';
-import {
-  Container,
-  Box,
-  Tabs,
-  Tab,
-  Typography,
-  Paper
-} from '@mui/material';
-import StudentForm from './StudentForm';
-import StudentList from './StudentList';
+import React, { useState } from "react";
+import StudentForm from "./StudentForm";
+import StudentList from "./StudentList";
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -27,11 +19,7 @@ const TabPanel = (props: TabPanelProps) => {
       aria-labelledby={`simple-tab-${index}`}
       {...other}
     >
-      {value === index && (
-        <Box sx={{ p: 3 }}>
-          {children}
-        </Box>
-      )}
+      {value === index && <div className="p-6">{children}</div>}
     </div>
   );
 };
@@ -39,29 +27,43 @@ const TabPanel = (props: TabPanelProps) => {
 const Home = () => {
   const [currentTab, setCurrentTab] = useState(0);
 
-  const handleTabChange = (event: React.SyntheticEvent, newValue: number) => {
-    setCurrentTab(newValue);
+  const handleTabChange = (index: number) => {
+    setCurrentTab(index);
   };
 
   return (
-    <Container maxWidth="lg" sx={{ mt: 4 }}>
-      <Paper elevation={3} sx={{ mb: 4, p: 2 }}>
-        <Typography variant="h3" component="h1" gutterBottom align="center">
+    <div className="container mx-auto px-4">
+      <div className="bg-gray-800 rounded-lg shadow-xl mb-8 p-4 border border-gray-700">
+        <h1 className="text-4xl font-bold text-center text-gray-100">
           Sistema de Gestión Estudiantil
-        </Typography>
-      </Paper>
+        </h1>
+      </div>
 
-      <Paper elevation={3}>
-        <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-          <Tabs 
-            value={currentTab} 
-            onChange={handleTabChange}
-            variant="fullWidth"
-          >
-            <Tab label="Lista de Estudiantes" />
-            <Tab label="Registrar Estudiante" />
-          </Tabs>
-        </Box>
+      <div className="bg-gray-800 rounded-lg shadow-xl border border-gray-700">
+        <div className="border-b border-gray-700">
+          <div className="flex">
+            <button
+              className={`flex-1 py-4 px-6 text-center focus:outline-none transition-colors duration-200 ${
+                currentTab === 0
+                  ? "border-b-2 border-purple-500 text-purple-400"
+                  : "text-gray-400 hover:text-gray-200"
+              }`}
+              onClick={() => handleTabChange(0)}
+            >
+              Lista de Estudiantes
+            </button>
+            <button
+              className={`flex-1 py-4 px-6 text-center focus:outline-none transition-colors duration-200 ${
+                currentTab === 1
+                  ? "border-b-2 border-purple-500 text-purple-400"
+                  : "text-gray-400 hover:text-gray-200"
+              }`}
+              onClick={() => handleTabChange(1)}
+            >
+              Registrar Estudiante
+            </button>
+          </div>
+        </div>
 
         <TabPanel value={currentTab} index={0}>
           <StudentList />
@@ -69,8 +71,8 @@ const Home = () => {
         <TabPanel value={currentTab} index={1}>
           <StudentForm />
         </TabPanel>
-      </Paper>
-    </Container>
+      </div>
+    </div>
   );
 };
 

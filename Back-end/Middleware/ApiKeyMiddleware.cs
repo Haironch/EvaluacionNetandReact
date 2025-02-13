@@ -25,7 +25,14 @@ namespace Back_end.Middleware
             var appSettings = context.RequestServices.GetRequiredService<IConfiguration>();
             var apiKey = appSettings.GetValue<string>(APIKEY);
 
-            if (!apiKey.Equals(extractedApiKey))
+            if (string.IsNullOrEmpty(apiKey))
+            {
+                context.Response.StatusCode = 500;
+                await context.Response.WriteAsync("API Key configuration is missing");
+                return;
+            }
+
+            if (!apiKey.Equals(extractedApiKey.ToString(), StringComparison.OrdinalIgnoreCase))
             {
                 context.Response.StatusCode = 401;
                 await context.Response.WriteAsync("Unauthorized client");

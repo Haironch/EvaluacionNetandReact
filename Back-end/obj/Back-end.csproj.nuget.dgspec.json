@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ahayaccha\\Desktop\\Proyect Prs\\EvaluacionNetandReact\\Back-end\\Back-end.csproj": {}
+    "C:\\Users\\Usuario\\Desktop\\Proyectos\\EvaluacionNetandReact\\Back-end\\Back-end.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ahayaccha\\Desktop\\Proyect Prs\\EvaluacionNetandReact\\Back-end\\Back-end.csproj": {
+    "C:\\Users\\Usuario\\Desktop\\Proyectos\\EvaluacionNetandReact\\Back-end\\Back-end.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ahayaccha\\Desktop\\Proyect Prs\\EvaluacionNetandReact\\Back-end\\Back-end.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Proyectos\\EvaluacionNetandReact\\Back-end\\Back-end.csproj",
         "projectName": "Back-end",
-        "projectPath": "C:\\Users\\ahayaccha\\Desktop\\Proyect Prs\\EvaluacionNetandReact\\Back-end\\Back-end.csproj",
-        "packagesPath": "C:\\Users\\ahayaccha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ahayaccha\\Desktop\\Proyect Prs\\EvaluacionNetandReact\\Back-end\\obj\\",
+        "projectPath": "C:\\Users\\Usuario\\Desktop\\Proyectos\\EvaluacionNetandReact\\Back-end\\Back-end.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Usuario\\Desktop\\Proyectos\\EvaluacionNetandReact\\Back-end\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ahayaccha\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -38,7 +38,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net9.0": {
@@ -46,11 +46,11 @@
           "dependencies": {
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
-              "version": "[9.0.1, )"
+              "version": "[9.0.2, )"
             },
             "MongoDB.Driver": {
               "target": "Package",
-              "version": "[3.1.0, )"
+              "version": "[3.2.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -76,7 +76,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

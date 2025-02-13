@@ -31,5 +31,17 @@ namespace Back_end.Services
         {
             return await _students.Find(_ => true).ToListAsync();
         }
+
+        // Nuevo método para obtener un estudiante por ID
+        public async Task<Student> GetByIdAsync(string id)
+        {
+            return await _students.Find(student => student.Id == id).FirstOrDefaultAsync();
+        }
+
+        // Nuevo método para eliminar un estudiante
+        public async Task DeleteAsync(string id)
+        {
+            await _students.DeleteOneAsync(student => student.Id == id);
+        }
     }
 }

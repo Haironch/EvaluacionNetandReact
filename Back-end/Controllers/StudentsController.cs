@@ -39,5 +39,25 @@ namespace Back_end.Controllers
             await _studentService.CreateAsync(student);
             return CreatedAtAction(nameof(GetByGrade), new { grado = student.Grado }, student);
         }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete(string id)
+        {
+            try
+            {
+                var student = await _studentService.GetByIdAsync(id);
+                if (student == null)
+                {
+                    return NotFound($"No se encontró el estudiante con ID {id}");
+                }
+
+                await _studentService.DeleteAsync(id);
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Error interno al eliminar el estudiante: {ex.Message}");
+            }
+        }
     }
 }

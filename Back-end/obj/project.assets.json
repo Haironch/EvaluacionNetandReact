@@ -18,7 +18,7 @@
           }
         }
       },
-      "Microsoft.AspNetCore.OpenApi/9.0.1": {
+      "Microsoft.AspNetCore.OpenApi/9.0.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.OpenApi": "1.6.17"
@@ -106,7 +106,7 @@
           }
         }
       },
-      "MongoDB.Bson/3.1.0": {
+      "MongoDB.Bson/3.2.0": {
         "type": "package",
         "dependencies": {
           "System.Memory": "4.5.5",
@@ -123,12 +123,12 @@
           }
         }
       },
-      "MongoDB.Driver/3.1.0": {
+      "MongoDB.Driver/3.2.0": {
         "type": "package",
         "dependencies": {
           "DnsClient": "1.6.1",
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "MongoDB.Bson": "3.1.0",
+          "MongoDB.Bson": "3.2.0",
           "SharpCompress": "0.30.1",
           "Snappier": "1.0.0",
           "System.Buffers": "4.5.1",
@@ -346,10 +346,10 @@
         "lib/netstandard2.1/DnsClient.xml"
       ]
     },
-    "Microsoft.AspNetCore.OpenApi/9.0.1": {
-      "sha512": "xRJe8UrLnOGs6hOBrT/4r74q97626H0mABb/DV0smlReIx6uQCENAe+TUqF6hD3NtT4sB+qrvWhAej6kxPxgew==",
+    "Microsoft.AspNetCore.OpenApi/9.0.2": {
+      "sha512": "JUndpjRNdG8GvzBLH/J4hen4ehWaPcshtiQ6+sUs1Bcj3a7dOsmWpDloDlpPeMOVSlhHwUJ3Xld0ClZjsFLgFQ==",
       "type": "package",
-      "path": "microsoft.aspnetcore.openapi/9.0.1",
+      "path": "microsoft.aspnetcore.openapi/9.0.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -358,7 +358,7 @@
         "THIRD-PARTY-NOTICES.TXT",
         "lib/net9.0/Microsoft.AspNetCore.OpenApi.dll",
         "lib/net9.0/Microsoft.AspNetCore.OpenApi.xml",
-        "microsoft.aspnetcore.openapi.9.0.1.nupkg.sha512",
+        "microsoft.aspnetcore.openapi.9.0.2.nupkg.sha512",
         "microsoft.aspnetcore.openapi.nuspec"
       ]
     },
@@ -683,10 +683,10 @@
         "version.txt"
       ]
     },
-    "MongoDB.Bson/3.1.0": {
-      "sha512": "3dhaZhz18B5vUoEP13o2j8A6zQfkHdZhwBvLZEjDJum4BTLLv1/Z8bt25UQEtpqvYwLgde4R6ekWZ7XAYUMxuw==",
+    "MongoDB.Bson/3.2.0": {
+      "sha512": "Lkown45o2rXhFRwkpOCRwy329kqjRuJVVGgVoJKXE8STkqB/msrMXk+4geYYUvykOy/zvGY+ETKbWfJFYP+3gA==",
       "type": "package",
-      "path": "mongodb.bson/3.1.0",
+      "path": "mongodb.bson/3.2.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -697,15 +697,15 @@
         "lib/net6.0/MongoDB.Bson.xml",
         "lib/netstandard2.1/MongoDB.Bson.dll",
         "lib/netstandard2.1/MongoDB.Bson.xml",
-        "mongodb.bson.3.1.0.nupkg.sha512",
+        "mongodb.bson.3.2.0.nupkg.sha512",
         "mongodb.bson.nuspec",
         "packageIcon.png"
       ]
     },
-    "MongoDB.Driver/3.1.0": {
-      "sha512": "+O7lKaIl7VUHptE0hqTd7UY1G5KDp/o8S4upG7YL4uChMNKD/U6tz9i17nMGHaD/L2AiPLgaJcaDe2XACsegGA==",
+    "MongoDB.Driver/3.2.0": {
+      "sha512": "7y25rGE6rO4b3WMlYAsiU4d8iva6UPPM6irDXfJi2Jp9zn7muO1myOEcSzjPROZfgI8lLnKNIg5Ohe8d7c2qJA==",
       "type": "package",
-      "path": "mongodb.driver/3.1.0",
+      "path": "mongodb.driver/3.2.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -716,7 +716,7 @@
         "lib/net6.0/MongoDB.Driver.xml",
         "lib/netstandard2.1/MongoDB.Driver.dll",
         "lib/netstandard2.1/MongoDB.Driver.xml",
-        "mongodb.driver.3.1.0.nupkg.sha512",
+        "mongodb.driver.3.2.0.nupkg.sha512",
         "mongodb.driver.nuspec",
         "packageIcon.png"
       ]
@@ -1052,25 +1052,25 @@
   },
   "projectFileDependencyGroups": {
     "net9.0": [
-      "Microsoft.AspNetCore.OpenApi >= 9.0.1",
-      "MongoDB.Driver >= 3.1.0",
+      "Microsoft.AspNetCore.OpenApi >= 9.0.2",
+      "MongoDB.Driver >= 3.2.0",
       "Swashbuckle.AspNetCore >= 7.2.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ahayaccha\\.nuget\\packages\\": {}
+    "C:\\Users\\Usuario\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ahayaccha\\Desktop\\Proyect Prs\\EvaluacionNetandReact\\Back-end\\Back-end.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Proyectos\\EvaluacionNetandReact\\Back-end\\Back-end.csproj",
       "projectName": "Back-end",
-      "projectPath": "C:\\Users\\ahayaccha\\Desktop\\Proyect Prs\\EvaluacionNetandReact\\Back-end\\Back-end.csproj",
-      "packagesPath": "C:\\Users\\ahayaccha\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ahayaccha\\Desktop\\Proyect Prs\\EvaluacionNetandReact\\Back-end\\obj\\",
+      "projectPath": "C:\\Users\\Usuario\\Desktop\\Proyectos\\EvaluacionNetandReact\\Back-end\\Back-end.csproj",
+      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Usuario\\Desktop\\Proyectos\\EvaluacionNetandReact\\Back-end\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ahayaccha\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
@@ -1094,7 +1094,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.100"
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net9.0": {
@@ -1102,11 +1102,11 @@
         "dependencies": {
           "Microsoft.AspNetCore.OpenApi": {
             "target": "Package",
-            "version": "[9.0.1, )"
+            "version": "[9.0.2, )"
           },
           "MongoDB.Driver": {
             "target": "Package",
-            "version": "[3.1.0, )"
+            "version": "[3.2.0, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
@@ -1132,7 +1132,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
